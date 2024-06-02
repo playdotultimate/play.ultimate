@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.IntroSection{
+    height: fit-content;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.row1{
+    display: flex;
+    gap: 20px;
+}
+*{
+    text-decoration: none;
+}
+
+#frisbeeimg{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.introdiv{
+    flex: 40%;
+    max-width: 100%;
+    
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 20px;
+    background-color: #f3f4f6;
+  backdrop-filter: saturate(180%) blur(10px);
+}
+.IntroHeder{
+    margin: 20px;
+    font-size: 25px;
+}
+.LandingPageH1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.IntroSection p{
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.introbtn{
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    background-color: #111827;
+}
+
+.introimgdiv{
+    flex: 60%;
+    max-width: 100%;
+    margin: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*IntroSection2 start*/
+.IntroSection2{
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 70px 0 70px 0;
+}
+.IntroSection2Div{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+   
+}
+
+.IntroSection2Divchild > *{
+    margin: 10px;
+}
+.IntroSection2Divchild i{
+    font-size: 48px;
+}
+.IntroSection2Divchild p{
+   font-size: 16px;
+}
+
+/*IntroSection3 start*/
+
+.IntroSection3{
+    text-align: center;
+}
+
+.IntroSection3Div{
+    margin: 60px 20px 50px 60px;
+}
+
+
+
+.GetStarted{
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    padding: 0 20px 0 20px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    background-color: #111827;
+}
+
+@media screen and ( max-width: 855px ){
+		.row1{
+            flex-direction: column;
+        }
+        .introdiv{
+            flex: 100%;
+            margin: 0 10px 0 10px;
+        }
+        .introimgdiv{
+            flex: 100%;
+            margin: 0 10px 0 10px;
+        }
+        .IntroHeder{
+            font-size: 20px;
+            margin: 40px 10px 10px 10px;
+        }
+        .allheadings{
+            font-size: 35px;
+        }
+        .introdiv p{
+            font-size: 20px;
+        
+        }
+        .IntroSection{
+            height: fit-content;
+            min-height: fit-content;
+            padding-bottom: 50px;
+        }
+
+        /* introsection2 start*/
+        .IntroSection2Div{
+            flex-direction: column;
+            gap: 30px;
+        }
+        /* introsection3 start*/
+        .IntroSection3Div{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }

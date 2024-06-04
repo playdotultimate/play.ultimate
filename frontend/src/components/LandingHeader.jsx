@@ -5,7 +5,7 @@ export default function LandingHeader() {
   return (
 <nav className="navbar-containerL1">
         <div className="brandL1">Play.Ultimate</div>
-        <Link to="/Login">
+        <Link to="/login">
             <button className='introbtnL1'>Login</button>
           </Link>
       </nav>  

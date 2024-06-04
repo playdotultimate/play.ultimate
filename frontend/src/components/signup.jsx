@@ -214,7 +214,7 @@ export default function Signup() {
       loginFormRef.current.reset();
       setFormSubmitted(true);
       setisLoginOTP(true);
-      navigate("/Home");
+      navigate("/home");
     }
     //Login with eamil and OTP
     else if (params === "LoginOTP") {
@@ -237,7 +237,7 @@ export default function Signup() {
         alert(
           `login Successfull UserId : ${emailRefLogin.current.value} and password : ${PasswordRefLogin.current.value}`
         );
-        navigate("/Home");
+        navigate("/home");
       } else {
         alert("check email id or password");
       }

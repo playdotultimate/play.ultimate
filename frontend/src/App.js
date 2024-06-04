@@ -20,7 +20,7 @@ function App() {
       ),
     },
     {
-      path: "/Login",
+      path: "/login",
       element: (
         <>
           <Signup />
@@ -28,7 +28,7 @@ function App() {
       ),
     },
     {
-      path: "/Home",
+      path: "/home",
       element: (
         <>
           <LandingHeaderHome />

@@ -22,7 +22,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <Link to='/Login'><button className='introbtn'>Get Started</button></Link>
+            <Link to='/login'><button className='introbtn'>Get Started</button></Link>
               
             
           </div>
@@ -80,7 +80,7 @@ export default function LandingPage() {
         </div>
         <div className="">
              <br />
-             <Link to='/Login'> <button className='GetStarted'>Get Started</button></Link>
+             <Link to='/login'> <button className='GetStarted'>Get Started</button></Link>
           
         </div>
       </div>

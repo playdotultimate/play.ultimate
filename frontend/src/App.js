@@ -4,6 +4,7 @@ import Signup from "./components/signup";
 import Signup1 from "./components/signup1";
 import LandingHeaderHome from "./components/LandingHeaderHome";
 import LandingHeader from "./components/LandingHeader";
+import ProfileSetting from "./components/ProfileSetting";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
@@ -36,6 +37,15 @@ function App() {
         </>
       ),
     },
+    {
+      path: "/myprofile",
+      element: (
+        <>
+          
+          <ProfileSetting/>
+        </>
+      ),
+    }
   ]);
 
   return (

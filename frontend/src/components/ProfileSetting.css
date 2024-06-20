@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+.profile-settings {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .profile-settings h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .profile-photo-section button {
+    margin-right: 10px;
+  }
+  
+  .profile-field {
+    margin-bottom: 10px;
+  }
+  
+  .profile-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  
+  .field-input,
+  .field-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .field-input input {
+    flex: 2;
+    padding: 10px 30px 10px 30px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .field-buttons button {
+    margin-left: 5px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid rgb(119, 91, 161);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .field-buttons button:nth-child(1){
+    background-color: rgba(119, 91, 161, 0.405);
+  }
+  
+  .field-display span {
+    flex: 2;
+  }
+  
+  .field-display button {
+    padding: 10px 30px 10px 30px;
+    border: 2px solid rgb(119, 91, 161);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #showpass{
+    position: absolute;
+    right: 230px;
+  }
+  
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-bar {
+    display: flex;
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffffff; /* Example background color */
+  }
+  
+  .left-content,
+  .center-content,
+  .right-content {
+    flex: 1;
+  }
+  
+  .left-content {
+    text-align: left;
+  }
+
+  .center-content span{
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .right-content {
+    text-align: right;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link svg {
+    margin-right: 5px;
+  }
+  
+  .center-content {
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 766px) {
+    .profile-settings {
+      padding: 10px;
+      margin: 20px 10px 20px 10px;
+      max-width: calc(100% - 20px);
+      width: 100%;
+    }
+  
+    .field-input,
+    .field-display {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #showpass{
+        position: absolute;
+        right: 10px;
+        top: 12px;
+      }
+    .field-input input,
+    .field-display span {
+      width: 100%;
+      margin-bottom: 15px;
+      
+    }
+  
+    .field-buttons {
+      display: flex;
+      width: 100%;
+      gap: 5px;
+    }
+  
+    .field-buttons button {
+      flex: 1;
+      margin-left: 0;
+    }
+  
+    .profile-photo-section button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .field-display button {
+      width: 100%;
+    }
+  }

@@ -388,7 +388,7 @@ export default function Signup() {
             </div>
             <div className="form-group">
               <label htmlFor="Adress" className="labels">
-                Adress
+                Address
               </label>
               <input
                 type="text"

@@ -19,7 +19,7 @@ export default function LandingHeaderHome() {
       <nav className="navbar-container">
         <div className="brand equal">Play.Ultimate</div>
         <ul className={responsemenuOpen? 'nav-linksr':'nav-linksr translate'}>
-          <li className='active'>Home</li>
+          <Link to="/home"><li className='active'>Home</li></Link>
           <li>About</li>
           <li>Teams</li>
           <li>Events</li>
@@ -27,7 +27,7 @@ export default function LandingHeaderHome() {
           <i id='cross' className="fa-solid fa-xmark" onClick={toggleresponsemenuOpen}></i>
         </ul>
         <ul className="nav-links equal">
-          <li className='active'>Home</li>
+        <Link to="/home"><li className='active'>Home</li></Link>
           <li>About</li>
           <li>Teams</li>
           <li>Events</li>
@@ -41,7 +41,7 @@ export default function LandingHeaderHome() {
           {dropdownOpen && (
             <div className="dropdown-menu">
               <ul>
-                <li>Settings</li>
+                <Link to="/myprofile"><li>My Profile</li></Link>
                 <Link to="/"><li>Logout</li></Link>
               </ul>
             </div>

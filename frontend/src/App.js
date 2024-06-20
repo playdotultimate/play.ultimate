@@ -5,7 +5,7 @@ import Signup1 from "./components/signup1";
 import LandingHeaderHome from "./components/LandingHeaderHome";
 import LandingHeader from "./components/LandingHeader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import ProfilePage from "./components/ProfilePage";
 import "./App.css";
 
 function App() {
@@ -33,6 +33,15 @@ function App() {
         <>
           <LandingHeaderHome />
           <LandingPageHome />
+        </>
+      ),
+    },
+    {
+      path: "/profile",
+      element: (
+        <>
+          <LandingHeaderHome />
+          <ProfilePage />
         </>
       ),
     },

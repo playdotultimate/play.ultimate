@@ -134,9 +134,12 @@ export default function Signup() {
     };
     console.log(otpData);
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/otp-login", {
-        ...otpData,
-      });
+      const res = await axios.post(
+        "https://playultimate-production.up.railway.app/api/auth/otp-login",
+        {
+          ...otpData,
+        }
+      );
       if (res.status === 200) {
         console.log(res.data);
       } else {
@@ -168,9 +171,12 @@ export default function Signup() {
       };
 
       try {
-        const res = await axios.post("http://localhost:8000/api/auth/signup", {
-          ...arr,
-        });
+        const res = await axios.post(
+          "https://playultimate-production.up.railway.app/api/auth/signup",
+          {
+            ...arr,
+          }
+        );
 
         // Handle the response appropriately
         if (res.status === 200) {
@@ -197,9 +203,12 @@ export default function Signup() {
       };
 
       try {
-        const res = await axios.post("http://localhost:8000/api/auth/signin", {
-          ...arr,
-        });
+        const res = await axios.post(
+          "https://playultimate-production.up.railway.app/api/auth/signin",
+          {
+            ...arr,
+          }
+        );
 
         // Handle the response appropriately
         if (res.status === 200) {
@@ -263,7 +272,7 @@ export default function Signup() {
       console.log(otpSend);
       try {
         const res = await axios.post(
-          "http://localhost:8000/api/auth/otp-verify",
+          "https://playultimate-production.up.railway.app/api/auth/otp-verify",
           {
             ...otpSend,
           }

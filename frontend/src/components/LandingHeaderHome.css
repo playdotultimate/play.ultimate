@@ -52,8 +52,9 @@
     position: relative;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   cursor: pointer;
+ 
   margin-right: 20px;
   font-size: 2rem;
   margin-left: 20px;
@@ -135,7 +136,7 @@
    display: none;
   }
   .response-menu-btn{
-   display: block;
+   display: flex;
   }
 
   .nav-linksr {
@@ -153,6 +154,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
+    color: #000000;
     transition: color 0.3s ease-in-out;
     padding: 10px 20px 10px 20px;
   }

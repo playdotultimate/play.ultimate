@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import frisbeeimage from '../images/frisbeeimage.jpg'
 import './LandingPageHome.css'
 export default function LandingPageHome() {
@@ -167,6 +167,39 @@ export default function LandingPageHome() {
       </div>
     </div>
   </section>
+
+  <footer className="footer">
+            <div className="footer-content">
+                <div className="footer-section social">
+                    <h2>play.ultimate</h2>
+                    <p>Discover the world of ultimate frisbee and connect with players across the globe.</p>
+                    <div className="social-icons">
+                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-instagram"></i>
+                        <i className="fab fa-facebook"></i>
+                    </div>
+                </div>
+                <div className="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/tournaments">Tournaments</Link></li>
+                        <li><Link to="/teams">Teams</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                    </ul>
+                </div>
+                <div className="footer-section legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><Link to="/terms-of-service">Terms of Service</Link></li>
+                        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="footer-bottom">
+                <p>&copy; 2024 play.ultimate. All rights reserved.</p>
+            </div>
+        </footer>
 </>
 
   )

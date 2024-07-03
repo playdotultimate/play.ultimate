@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import React from "react";
-import "./signup.css";
+import "./CSS/signup.css";
 import generateOTP from "../Services/GenerateOTP";
 import { Link, useNavigate } from "react-router-dom";
 

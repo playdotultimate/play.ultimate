@@ -8,6 +8,7 @@ import ProfileSetting from "./components/ProfileSetting";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
+import TournamentsPage from "./components/TournamentsPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,7 +33,7 @@ function App() {
       path: "/home",
       element: (
         <>
-          <LandingHeaderHome />
+          <LandingHeaderHome active={'home'}/>
           <LandingPageHome />
         </>
       ),
@@ -45,12 +46,21 @@ function App() {
           <ProfileSetting/>
         </>
       ),
+    },{
+      path: "/tournaments",
+      element: (
+        <>
+          <LandingHeaderHome active={'tournaments'}/>
+          <TournamentsPage/>
+        </>
+      ),
     }
   ]);
 
   return (
     <>
       <div className="App">
+       
         <RouterProvider router={router} />
       </div>
     </>

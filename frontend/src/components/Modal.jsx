@@ -1,5 +1,5 @@
 import React from 'react'
-import './Modal.css';
+import './CSS/Modal.css';
 export default function Modal({ show, onClose, onConfirm, field }) {
     if (!show) {
         return null;

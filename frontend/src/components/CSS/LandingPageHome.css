@@ -118,15 +118,11 @@ text-align: center;
         margin-bottom: 40px;
     }
     .joinCardsDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 15px;
     }
     .joincards{
-        flex: calc(25% - 15px);
-        max-width: 100%;
-        
         padding: 15px;
         border-radius: 5px;
         background-color: #ffffff;
@@ -278,5 +274,14 @@ text-align: center;
             .legal,.links{
                 width: calc(50%);
              }
+
+            .joinCardsDiv{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
              
+    }
+    @media screen and (max-width: 500px) {
+        .joinCardsDiv{
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }

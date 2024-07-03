@@ -1,5 +1,5 @@
 import React from 'react'
-import './LandingHeader.css'
+import './CSS/LandingHeader.css'
 import { Link } from 'react-router-dom'
 export default function LandingHeader() {
   return (

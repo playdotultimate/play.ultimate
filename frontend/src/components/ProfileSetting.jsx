@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProfileSetting.css';
+import './CSS/ProfileSetting.css';
 import Modal from './Modal.jsx';
 import { Link } from 'react-router-dom'
 

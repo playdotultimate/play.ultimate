@@ -1,6 +1,6 @@
 import React from 'react'
 import frisbeeimage from '../images/frisbeeimage.jpg'
-import './LandingPage.css'
+import './CSS/LandingPage.css'
 import { Link } from 'react-router-dom'
 export default function LandingPage() {
 

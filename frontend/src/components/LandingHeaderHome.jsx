@@ -9,7 +9,8 @@ export default function LandingHeaderHome({active}) {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    const toggleDropdown = () => {
+    const toggleDropdown = (event) => {
+      event.stopPropagation();
       setDropdownOpen(prevState => !prevState);
     };
   
@@ -48,16 +49,16 @@ export default function LandingHeaderHome({active}) {
           <li>Teams</li>
           <li>Contact</li>
         </ul>
-        <div className="response-menu-btn" onClick={toggleresponsemenuOpen} ref={dropdownRef}>
+        <div className="response-menu-btn" onClick={toggleresponsemenuOpen} >
         <FaBars className="menu-icon" />
          </div>
-        <div className="user-menu equal" onClick={toggleDropdown}>
+        <div className="user-menu equal" onClick={toggleDropdown} ref={dropdownRef}>
           <FaUserCircle className="user-icon" />
           {dropdownOpen && (
-            <div className="dropdown-menu">
+            <div className="dropdown-menu" >
               <ul>
-                <Link to="/myprofile"><li>My Profile</li></Link>
-                <Link to="/"><li>Logout</li></Link>
+                <Link to="/myprofile"><li onClick={() => setDropdownOpen(false)}>My Profile</li></Link>
+                <Link to="/"><li onClick={() => setDropdownOpen(false)}>Logout</li></Link>
               </ul>
             </div>
           )}

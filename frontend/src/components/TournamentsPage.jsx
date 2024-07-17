@@ -1,31 +1,39 @@
 import React, { useState } from 'react'
+import 'tailwindcss/tailwind.css';
 import './CSS/TournamentsPage.css'
-import { Link } from 'react-router-dom'
+import { Link , useNavigate} from 'react-router-dom'
+
 
 export default function TournamentsPage() {
+  const navigate = useNavigate();
 
+  //this part for axios api call
   const [tournament,settournament]=useState([
     {
-      Name: 'Bengaluru Fast5 Mixer',
+      Name: 'bengaluru fast5 mixer',
       date: 'January 20, 2024',
-      place: 'Bengaluru',
+      place: 'Bengaluru,IND',
       state: 'Completed'
     },
     {
       Name: 'NCR Fast5 Mixer',
       date: 'July 22, 2023',
-      place: 'NCR',
+      place: 'NCR,IND',
       state: 'Completed'
     },
     {
       Name: 'Bengaluru Fast5 Open',
       date: 'June 10, 2023',
-      place: 'Bengaluru',
+      place: 'Bengaluru,IND',
       state: 'Completed'
     }
   ])
+
+  //this part for axios api call
+
+  
 const Goto=(value)=>{
-  console.log(value)
+  navigate(`/tournaments/${value.Name.toLowerCase().split(' ').join('-')}`,{ state : { value } });
 }
   return (
     <div className="tournament">
@@ -33,9 +41,9 @@ const Goto=(value)=>{
         <div className='tourcontentdiv'>
      {
        tournament.map((value,index)=>(
-        <div className="tourcard" key={index} onClick={()=>{Goto(value.Name)}}>
+        <div className="tourcard" key={index} onClick={()=>{Goto(value)}}>
           <div className="">
-          <h3 className="" style={{marginBottom: '5px'}}>{value.Name}</h3>
+          <h3 className="" style={{marginBottom: '5px'}}>{value.Name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</h3>
           <p className="" style={{marginBottom: '3px'}}>{value.date}</p>
           <p style={{marginBottom: '10px',color: '#6E6E6E'}}>{value.place} <i className="fas fa-map-marker-alt"></i></p>
           <div className='' style={{padding: '5px 8px 5px 8px' , background: '#111827',color: 'white', width: 'fit-content',

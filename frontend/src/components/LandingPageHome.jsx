@@ -17,15 +17,15 @@ export default function LandingPageHome() {
               Play Ultimate Frisbee
             </h1>
             <p className="">
-               Join a community of ultimate frisbee enthusiasts and take your game to the next level.
+               Join Link community of ultimate frisbee enthusiasts and take your game to the next level.
             </p>
           </div>
-          <a
+          <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className='introbtn'>Join Now</button>
-          </a>
+          </Link>
           
         </div>
         <div className='introimgdiv'>
@@ -44,6 +44,7 @@ export default function LandingPageHome() {
       <div className="">
         <div className="AboutBox"><div>About</div></div>
         <h1 className="allheadings">What is Ultimate Frisbee?</h1>
+        <br />
         <p className="">
           Ultimate frisbee is a fast-paced, non-contact team sport played with a flying disc. Players score points
           by passing the disc to a teammate in the opposing team's end zone. It's a game that combines the best
@@ -58,6 +59,7 @@ export default function LandingPageHome() {
       <div className="">
       <div className="JoinTeamBox"><div>Join a Team</div></div>
         <h1 className="allheadings">Find Your Local Ultimate Frisbee Team</h1>
+        <br />
         <p className="p1">
           Whether you're a seasoned player or a beginner, there's a team for you. Check out the list of local teams
           and sign up today.
@@ -66,42 +68,42 @@ export default function LandingPageHome() {
           <div className="joincards">
             <h3 className="">Acme Ultimate</h3>
             <p className="">Competitive team in downtown</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Join Now</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards">
             <h3 className="">Frisbee Flyers</h3>
             <p className="">Recreational team in the suburbs</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Join Now</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards">
             <h3 className="">Ultimate Aces</h3>
             <p className="">Mixed team for all skill levels</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Join Now</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards">
             <h3 className="">Disc Dominators</h3>
             <p className="">Women's competitive team</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Join Now</button>
-          </a>
+          </Link>
           </div>
         </div>
       </div>
@@ -118,6 +120,7 @@ export default function LandingPageHome() {
         <h1 className="allheadings">
           Ultimate Frisbee Tournaments and Meetups
         </h1>
+        <br />
         <p className="p1">
           Check out the upcoming ultimate frisbee tournaments and meetups in your area. Join the community and take
           your game to the next level.
@@ -126,42 +129,42 @@ export default function LandingPageHome() {
           <div className="joincards addbackcolor">
             <h3 className="">Ultimate Summer Jam</h3>
             <p className="">June 15-16, Downtown Park</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Learn More</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards addbackcolor">
             <h3 className="">Ultimate Frisbee Meetup</h3>
             <p className="">July 1, Community Center</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Learn More</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards addbackcolor">
             <h3 className="">Ultimate Frisbee League</h3>
             <p className="">August 1 - October 15, City Park</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Learn More</button>
-          </a>
+          </Link>
           </div>
           <div className="joincards addbackcolor">
             <h3 className="">Ultimate Frisbee Clinic</h3>
             <p className="">September 10, Community Center</p>
-            <a
+            <Link
             className="joinnow"
-            href="#"
+            
           >
             <button className=''>Learn More</button>
-          </a>
+          </Link>
           </div>
         </div>
       </div>

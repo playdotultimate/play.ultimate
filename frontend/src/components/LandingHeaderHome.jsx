@@ -49,11 +49,11 @@ export default function LandingHeaderHome({active}) {
           <li>Teams</li>
           <li>Contact</li>
         </ul>
-        <div className="response-menu-btn" onClick={toggleresponsemenuOpen} >
+        <div className="response-menu-btn" onClick={toggleresponsemenuOpen} style={{ textDecoration: 'none',outline: 'none',WebkitTapHighlightColor: 'transparent'}}>
         <FaBars className="menu-icon" />
          </div>
-        <div className="user-menu equal" onClick={toggleDropdown} ref={dropdownRef}>
-          <FaUserCircle className="user-icon" />
+        <div className="user-menu equal"  ref={dropdownRef} style={{ textDecoration: 'none',outline: 'none',WebkitTapHighlightColor: 'transparent'}}>
+          <FaUserCircle className="user-icon" onClick={toggleDropdown} />
           {dropdownOpen && (
             <div className="dropdown-menu" >
               <ul>

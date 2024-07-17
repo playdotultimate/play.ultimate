@@ -1,16 +1,18 @@
 import LandingPageHome from "./components/LandingPageHome";
 import LandingPage from "./components/LandingPage";
 import Signup from "./components/signup";
-import Signup1 from "./components/signup1";
 import LandingHeaderHome from "./components/LandingHeaderHome";
 import LandingHeader from "./components/LandingHeader";
 import ProfileSetting from "./components/ProfileSetting";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import 'tailwindcss/tailwind.css';
 import "./App.css";
 import TournamentsPage from "./components/TournamentsPage";
+import {TournamenEventRouter,TournamentHomeRouter} from "./TournamentRouter.jsx";
 
 function App() {
+
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -52,6 +54,21 @@ function App() {
         <>
           <LandingHeaderHome active={'tournaments'}/>
           <TournamentsPage/>
+        </>
+      ),
+    },{
+      path: "/tournaments/:name",
+      element: (
+        <>
+          <TournamentHomeRouter/>
+        </>
+      ),
+    },
+    {
+      path: "/tournaments/:name/:event",
+      element: (
+        <>
+          <TournamenEventRouter/>
         </>
       ),
     }

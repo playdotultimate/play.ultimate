@@ -1,0 +1,194 @@
+.Schedulediv{
+    padding: 20px 20px 10px 20px;
+    min-height: calc(100vh - 162px);
+    
+}
+
+.Schedulecontentdiv{
+    padding: 10px 0 10px 0;
+    margin: 20px 20px 0 20px;
+    min-height: calc(100vh - 162px);
+    display: flex;
+    flex-direction: column;
+}
+.schedulemininav {
+    height: fit-content;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  
+  .schedulemininav::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit-based browsers */
+  }
+  
+  .schedulemininavbtns {
+    padding: 4px 12px;
+    border: 1px solid #9a9a9dda;
+    border-radius: 25px;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+    white-space: nowrap; /* Prevent text from wrapping */
+    /* Show ellipsis for overflow text */
+  }
+
+  /*schedule table css*/
+  .scheduletablediv{
+    padding: 10px 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    }
+    .scheduletablenavdiv{
+    height: 40px;
+    width: 83%;
+    text-align: center;
+    border-bottom: 1px solid #9ca1aa69;
+    }
+    .scheduletablenavbtn{
+        height: 100%;
+        width: 67px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 520;
+        color: #6b7280;
+        border: none;
+        background-color: transparent;
+    }
+    .btnactive{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        color: black;
+        border-bottom: 3px solid black;
+    }
+    .scheduletableouterdiv{
+        width: 80%;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; 
+    }
+  .scheduletable{
+    width: 100%;
+    border-collapse: collapse;
+  }
+ .scheduletablehead{
+   background-color: #f3f4f6;
+   height: 40px;
+  }
+  .scheduletablebody tr{
+    height: 68.4px;
+    border-bottom: 1px solid #dadde3;
+  }
+  
+  .scheduletablerow  td{
+    text-align: center;
+    padding: 2px 10px;
+  }
+  .matchVSouterdiv{
+    margin: 30px 0 0 0;
+    padding: 10px 0 10px 0;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .matchVScard{
+    min-height: fit-content;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px 0;
+    
+  }
+  .matchVScard::before {
+    content: '';
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    bottom: -0.1rem;
+    border-radius: 0.75rem; /* Same as the .matchVScard border radius */
+    background: linear-gradient(90deg, rgba(59,221,38,1) -1%, rgba(244,92,210,1) 48%, rgba(38,61,228,1) 98%);
+    z-index: -1; /* Behind the .matchVScard content */
+    padding: 5px; /* Space for the "border" */
+    box-sizing: border-box;
+  }
+  .matchcardprofileimg{
+    height: 30px;
+    aspect-ratio: 1;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #9ca1aa69;
+    border-radius: 50%;
+  }
+  .matchcardprofileimg:first-child{
+  margin: 0 30px 0 5px;
+  }
+  .matchcardprofileimg:last-child{
+    margin: 0 5px 0 30px;
+    }
+
+@media screen and (max-width: 950px) {
+  .scheduletableouterdiv{
+    width: 100%;
+}
+.matchVScard{
+  width: 100%;
+}
+.scheduletablenavdiv{
+    width: 103%;
+    }
+}
+@media screen and (max-width: 670px) {
+    .Schedulediv{
+        padding: 0px 15px 10px 15px;
+        min-height: calc(100vh - 192px);
+
+    }
+    .Schedulecontentdiv{
+        margin: 20px 0;
+        min-height: calc(100vh - 192px);
+
+    }
+    .matchcardprofileimg:first-child{
+      margin: 0 7px 0 5px;
+      }
+      .matchcardprofileimg:last-child{
+        margin: 0 5px 0 7px;
+        }
+}
+@keyframes backgroundGlow {
+  0% {
+    background-color: #E6F7F7;
+    box-shadow: 0 0 10px #E6F7F7;
+  }
+  50% {
+    background-color: #91EFEF;
+    box-shadow: 0 0 20px #91EFEF;
+  }
+  100% {
+    background-color: #E6F7F7;
+    box-shadow: 0 0 10px #E6F7F7;
+  }
+}
+
+.glow {
+  animation: backgroundGlow 2s ease;
+}

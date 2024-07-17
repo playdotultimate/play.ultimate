@@ -42,7 +42,7 @@
     font-size: 25px;
 }
 .allheadings{
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 .IntroSection p{
@@ -50,6 +50,7 @@
     font-family: "Libre Franklin", sans-serif;
     font-weight: lighter;
     margin-bottom: 20px;
+    
 }
 .introbtn{
     border-radius: 5px;
